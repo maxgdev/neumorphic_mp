@@ -19,6 +19,8 @@ class _NuePageState extends State<NuePage> {
 
   @override
   Widget build(BuildContext context) {
+    final _height = MediaQuery.of(context).size.height;
+
     return Scaffold(
         body: Container(
       decoration: BoxDecoration(
@@ -43,13 +45,12 @@ class _NuePageState extends State<NuePage> {
                       children: [
                         GestureDetector(
                           child: Container(
-                            margin: EdgeInsets.symmetric(horizontal: 30),
-                            height: 30,
-                            width: 30,
-                            child: themeMode
-                                ? Icon(FontAwesomeIcons.moon)
-                                : Icon(FontAwesomeIcons.sun)
-                          ),
+                              margin: EdgeInsets.symmetric(horizontal: 30),
+                              height: 30,
+                              width: 30,
+                              child: themeMode
+                                  ? Icon(FontAwesomeIcons.moon)
+                                  : Icon(FontAwesomeIcons.sun)),
                           onTap: toggleMode,
                         ),
                       ],
@@ -58,12 +59,22 @@ class _NuePageState extends State<NuePage> {
                     Intro(themeMode: themeMode)
                   ],
                 ),
-              )
+              ),
+              Container(
+                height: 0.2 * _height,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: buttonGradient,
+                  border: Border.all(
+                    width: 5,
+                    color: Color(0xff555555),
+                  )
+                ),
+              ),
             ],
           ),
         ),
       ),
     ));
   }
-
 }

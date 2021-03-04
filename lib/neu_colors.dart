@@ -11,3 +11,12 @@ Color textColorLight = Color(0xffd7dfe4);
 
 Color themeColorLight = Color(0xff00b0aa);
 Color themeCOlorDark = Color(0xff005855);
+
+Gradient buttonGradient = LinearGradient(
+  colors:[
+    Colors.black.withOpacity(0.7),
+    Color(0xff091f05)
+    ] ,
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight
+  );
