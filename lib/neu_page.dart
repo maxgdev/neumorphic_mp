@@ -20,6 +20,7 @@ class _NuePageState extends State<NuePage> {
   @override
   Widget build(BuildContext context) {
     final _height = MediaQuery.of(context).size.height;
+    final _width = MediaQuery.of(context).size.width;
 
     return Scaffold(
         body: Container(
@@ -102,10 +103,68 @@ class _NuePageState extends State<NuePage> {
                   child: Icon(FontAwesomeIcons.waveSquare,
                     size: 40,
                     // color:  themeMode ? textColorDark : textColorLight,
-                    color: textColorLight,
+                    color: themeColorLight,
                   ),
-                )
+                ),
               ),
+              Container(
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("3:07", 
+                          style: TextStyle(
+                            color:  themeMode ? textColorDark : textColorLight,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          )),
+                          Container(
+                            height: 7,
+                            width: _width * 0.45,
+                            margin: EdgeInsets.symmetric(horizontal: 20),
+                            child: Stack(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        Color(0xff474747),
+                                        Color(0xff141414),
+                                      ],
+                                      begin: Alignment.topCenter,
+                                      end: Alignment.bottomCenter,
+                                    )
+                                  ),
+                                ),
+                                FractionallySizedBox(
+                                  heightFactor: 1,
+                                  widthFactor: 0.7,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                        colors: [themeColorDark, themeColorLight],
+                                        begin: Alignment.topCenter,
+                                        end: Alignment.bottomCenter
+                                      ),
+                                      borderRadius: BorderRadius.circular(100)
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Text("2:11", 
+                            style: TextStyle(
+                              color:  themeMode ? textColorDark : textColorLight,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold
+                          )),
+                      ],
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),

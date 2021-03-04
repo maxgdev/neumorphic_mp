@@ -10,7 +10,7 @@ Color textColorDark = Color(0xff2a1d29);
 Color textColorLight = Color(0xffd7dfe4);
 
 Color themeColorLight = Color(0xff00b0aa);
-Color themeCOlorDark = Color(0xff005855);
+Color themeColorDark = Color(0xff005855);
 
 Gradient buttonGradient = LinearGradient(
   colors:[

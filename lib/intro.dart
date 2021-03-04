@@ -23,6 +23,7 @@ class Intro extends StatelessWidget {
           Text("Crack a Bottle",
             style: TextStyle(
               fontSize: 25,
+              fontWeight: FontWeight.w700,
               color: themeMode ? textColorDark : textColorLight
             ),
           ),
