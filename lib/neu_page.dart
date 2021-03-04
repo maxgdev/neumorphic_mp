@@ -161,10 +161,10 @@ class _NuePageState extends State<NuePage> {
                         ),
                         Text("2:11",
                             style: TextStyle(
-                                color:
-                                    themeMode ? textColorDark : textColorLight,
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold)),
+                              color:
+                              themeMode ? textColorDark : textColorLight,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold)),
                       ],
                     ),
                     SizedBox(height: 20),
@@ -177,9 +177,6 @@ class _NuePageState extends State<NuePage> {
                           icon: FontAwesomeIcons.minus, 
                           themeMode: themeMode,
                         ),
-                        // IconButton(
-                          // icon: Icon(FontAwesomeIcons.minus, color: themeColorLight), 
-                          // onPressed: () {}),
                         Container(
                           height: _height * 0.15,
                           width: _width * 0.15,
@@ -200,19 +197,14 @@ class _NuePageState extends State<NuePage> {
                               color: themeColorLight,
                               ),)),
                         ),
-                        
                         VolumeButton(
                           btnRadius: 10, 
                           childRadiius: 10, 
                           icon: FontAwesomeIcons.plus, 
                           themeMode: themeMode,
-                        ),
-                 
-                        
+                        ),   
                       ],
                     ),
-                    
-
                   ],
                 ),
               ),
