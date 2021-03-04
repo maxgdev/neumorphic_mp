@@ -34,13 +34,13 @@ class VolumeButton extends StatelessWidget {
               ? [
                   BoxShadow(
                     color: Color(0xff090010).withOpacity(0.7),
-                    offset: Offset(10, 10),
+                    offset: Offset(8, 8),
                     blurRadius: 20.0,
                     spreadRadius: 4.0,
                   ),
                   BoxShadow(
                     color: Colors.white.withOpacity(0.5),
-                    offset: Offset(-10, -10),
+                    offset: Offset(-8, -8),
                     blurRadius: 20.0,
                     spreadRadius: 4.0,
                   )
@@ -48,14 +48,14 @@ class VolumeButton extends StatelessWidget {
               : [
                   BoxShadow(
                     color: Color(0xff090010).withOpacity(0.7),
-                    offset: Offset(10, 10),
-                    blurRadius: 20.0,
+                    offset: Offset(6, 6),
+                    blurRadius: 15.0,
                     spreadRadius: 4.0,
                   ),
                   BoxShadow(
                     color: themeColorLight.withOpacity(0.5),
-                    offset: Offset(-10, -10),
-                    blurRadius: 20.0,
+                    offset: Offset(-6, -6),
+                    blurRadius: 15.0,
                     spreadRadius: 4.0,
                   ),
                 ],

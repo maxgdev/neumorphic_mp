@@ -180,7 +180,26 @@ class _NuePageState extends State<NuePage> {
                         // IconButton(
                           // icon: Icon(FontAwesomeIcons.minus, color: themeColorLight), 
                           // onPressed: () {}),
-                        Spacer(),
+                        Container(
+                          height: _height * 0.15,
+                          width: _width * 0.15,
+                          margin: EdgeInsets.symmetric(horizontal: 15),
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            gradient: LinearGradient(
+                              colors: [Colors.black, bgColorDarkTop],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight
+                            ),
+                          ),
+                          child: Center(child: Text(
+                            "7", 
+                            style: TextStyle(
+                              fontSize: 28,
+                              fontWeight: FontWeight.w600,
+                              color: themeColorLight,
+                              ),)),
+                        ),
                         
                         VolumeButton(
                           btnRadius: 10, 
