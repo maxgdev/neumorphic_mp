@@ -50,11 +50,12 @@ class _NuePageState extends State<NuePage> {
                                 ? Icon(FontAwesomeIcons.moon)
                                 : Icon(FontAwesomeIcons.sun)
                           ),
+                          onTap: toggleMode,
                         ),
                       ],
                     ),
                     SizedBox(height: 20),
-                    Intro(themeMode: true)
+                    Intro(themeMode: themeMode)
                   ],
                 ),
               )
